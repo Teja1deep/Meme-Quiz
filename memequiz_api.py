@@ -3,7 +3,7 @@ import google.generativeai as genai
 import json
 import time # Import time for sleep
 
-API_KEY = 'API_KEY_HERE'
+API_KEY = 'Paste your api key here'
 
 def get_gemini_questions(category, num_questions=10):
     genai.configure(api_key=API_KEY)
