@@ -6,7 +6,7 @@ import os
 from memequiz_api import get_gemini_questions
 import re
 # ======== Path to CSV File (change to your Excel path if needed) ========
-USER_CSV_PATH = r"C:/Users/Teja deep/Desktop/Meme Quiz/user_pass.csv"
+USER_CSV_PATH = r"CSV file path"
 
 # Create the CSV file if it doesn't exist
 if not os.path.exists(USER_CSV_PATH):
@@ -25,7 +25,7 @@ class LoginApp:
         self.root.state('zoomed')  # Start maximized
 
         # Try to load background image
-        bg_path = r"C:/Users/Teja deep/Desktop/Meme Quiz/background.png"
+        bg_path = r"background.png"
         self.bg_image = None
         self.bg_label = None
         if os.path.exists(bg_path):
@@ -44,7 +44,7 @@ class LoginApp:
             self._draw_decorations(self.canvas)
 
         # Load logo
-        logo_image = Image.open(r"C:/Users/Teja deep/Desktop/Meme Quiz/Meme_mania.png")
+        logo_image = Image.open(r"Meme_mania.png")
         logo_image = logo_image.resize((100, 100))
         self.logo = ImageTk.PhotoImage(logo_image)
 
